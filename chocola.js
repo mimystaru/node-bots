@@ -3,11 +3,11 @@ const client = new Discord.Client(); // discord client
 const settings = require('./settings.json')
 
 client.on("ready", () => {
-  console.log("Vanilla is here nya!")
+  console.log("Chocola is here nya!")
   client.user.setStatus("online")
 });
 
 
-client.login(settings.token);
-console.log('Discord listening.')
+client.login(settings.tokenchocola);
+console.log('Asset Chocola init complete')
 client.on('error', console.error)

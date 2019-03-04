@@ -8,6 +8,6 @@ client.on("ready", () => {
 });
 
 
-client.login(settings.token-vanilla);
-console.log('Discord listening.')
+client.login(settings.tokenvanilla);
+console.log('Asset Vanilla init complete.')
 client.on('error', console.error)
