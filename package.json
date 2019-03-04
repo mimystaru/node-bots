@@ -1,0 +1,37 @@
+{
+  "name": "bots",
+  "version": "1.0.0",
+  "description": "Some node bots for learning how to code",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.2",
+    "discord.js": "^11.4.2",
+    "express": "^4.16.4",
+    "formdata": "^0.10.4",
+    "got": "^9.6.0",
+    "http": "^0.0.0",
+    "irc": "^0.5.2",
+    "irc-colors": "^1.5.0",
+    "nodemon": "^1.18.10",
+    "npmlog": "^4.1.2",
+    "querystring": "^0.2.0",
+    "sqlite3": "^4.0.6",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimystaru/node-bots.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mimystaru/node-bots/issues"
+  },
+  "homepage": "https://github.com/mimystaru/node-bots#readme"
+}
