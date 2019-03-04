@@ -1,4 +1,4 @@
 #!/bin/bash
-node server.js;
+node vanilla.js;
 #npm run start
 
