@@ -23,7 +23,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon vanilla.js"
+    "vanilla": "nodemon vanilla.js",
+    "chocola": "nodemon chocola.js"
   },
   "repository": {
     "type": "git",
