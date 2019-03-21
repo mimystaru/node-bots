@@ -1,6 +1,14 @@
 const Discord = require ("discord.js"); // discord client
 const client = new Discord.Client(); // discord client
 const settings = require('./settings.json')
+var fs = require("fs")
+var text = fs.readFileSync("./chocola-pictures.txt").toString('utf-8')
+var PicData = text.split('\n');
+
+function Rand(data) {
+  // where data is the array
+  return data[Math.floor(Math.random() * data.length)]
+}
 
 
 client.on("message", message => {
@@ -12,6 +20,9 @@ client.on("message", message => {
   if (message.content.startsWith("c info")) {
     message.reply(`hiya , Chocola here! I am a NSFW image bot, please understand that i am still in development.NYA.\ntype \`c pic\` to get a picture!`)
   }
+  if (message.content.startsWith("c pic")) {
+    message.reply(Rand(PicData));
+ }
 });
 
 client.on("ready", () => {
