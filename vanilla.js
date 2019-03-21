@@ -7,6 +7,16 @@ client.on("ready", () => {
   client.user.setStatus("online")
 });
 
+client.on("message", message => {
+  if (message.author.bot) return;
+  if (message === null) return;
+  if (message.isMentioned(client.user.id)) {
+    message.reply("I am online!")
+  }
+
+
+
+})
 
 client.login(settings.tokenvanilla);
 console.log('Asset Vanilla init complete.')
