@@ -2,7 +2,7 @@ const Discord = require ("discord.js"); // discord client
 const client = new Discord.Client(); // discord client
 const settings = require('./settings.json')
 var fs = require("fs")
-var text = fs.readFileSync("./lunar-pictures.txt").toString('utf-8')
+var text = fs.readFileSync("./boos-pictures.txt").toString('utf-8')
 var PicData = text.split('\n');
 
 function Rand(data) {
@@ -11,7 +11,7 @@ function Rand(data) {
 }
 
 client.on("ready", () => {
-  console.log("flap flap")
+  console.log("nyahhaha")
   client.user.setStatus("online")
 });
 
@@ -19,17 +19,17 @@ client.on("message", message => {
   if (message.author.bot) return;
   if (message === null) return;
   if (message.isMentioned(client.user.id)) {
-    message.reply("Alive")
+    message.reply("I am online!")
   }
-  if (message.content.startsWith("l info")) {
-    message.reply(`an image bot for pictures of animals.\nType \`l pic\` to get a picture!`)
+  if (message.content.startsWith("b info")) {
+    message.reply(`an image bot. in development, sends trippy stuff.\nType \`b pic\` to get a picture!`)
   }
-  if (message.content.startsWith("l pic")) {
+  if (message.content.startsWith("b pic")) {
     message.reply(Rand(PicData));
   }
 
 })
 
-client.login(settings.tokenmoth);
+client.login(settings.tokenboo);
 console.log('Asset Vanilla init complete.')
 client.on('error', console.error)
